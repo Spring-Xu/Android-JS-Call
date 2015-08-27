@@ -1,0 +1,26 @@
+<html>
+<body>
+<script language="javascript">
+function javaCallJsFunction(isHide) {
+ var x = document.getElementById('div');
+  x.className = "";
+}
+
+function js2java() {
+ JSInterface.javaFunction();
+}
+
+</script>
+<style type="text/css">
+.hide {
+display:none;
+}
+</style>
+
+<input type="button" onClick="js2java()" style="height:200px;width:200px" value="Call Java Fn">
+
+<div class="hide" id="div">
+<font color="#FF0000">this is a hide div~~~~</font>
+</div>
+</body>
+
